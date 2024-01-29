@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <div class="mainnav"><p> <img src="./rocket.png" class="rocket">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visualsbyVal</p> <label><a href="">Contact</a></label><label><a href="">About</a></label><label><a href="">Home</a></label></div>
+
+</head>
+<body class="bg-one" onscroll="changeBackground()">
+  <div class="side-top"></div>
+
+  <div class="info1">
+
+    <div class="textbox">
+      <img src="./frame1.png" class="frame1">
+        <p aria-label="frontend developer">
+          Hello, I'm a&nbsp;<span class="typewriter"></span>
+        </p>
+        
+
+      <p class="side">I'm Valentin, 16 years old and currently <br><p class="side"> still in school. I'm currently working on </p> <p class="side">my html skills but  also learning C# in school.</p>
+    </div>
+    <div class="location">
+     
+
+      <img src="./pin.png" class="pin">
+      <p class="main2">Austria</p>
+    </div>
+ 
+  </div>
+
+  <div class="info2">
+
+    <div class="textbox">
+      <img src="./frame1.png" class="frame1">
+
+      <p class="main">About</p>
+      <p class="side">I'm Valentin, 16 years old and currently <br><p class="side"> still in school. I'm currently working on </p> <p class="side">my html skills but  also learning C# in school.</p>
+    </div>
+    <div class="location">
+     
+
+      <img src="./education.png " class="pin">
+      <p class="main2">HTL Wolfsberg</p>
+    </div>
+
+ 
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+
+  <div class="side back"></div>
+
+
+ 
+  </div>
+</body>
+
+
+<style>
+
+
+
+
+
+
+  .rocket {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width:70px;
+  }
+  .info1{
+    margin-bottom: 30vh;
+    position: relative;
+    width: 900px;
+    left: 30vh;
+    top: 10vh;
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        font-size: 2em;
+  }
+
+  .info1 .main2 {
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    position: relative;
+    top: -14vh;
+    font-size: 1.8em;
+    text-shadow:  0 0 20px #9900ff;
+  }
+  @keyframes pointup {
+  0% {top: -5vh;}
+  30% {top: -3vh};
+  50% {top: 0vh;}
+  100% {top: -5vh;}
+
+}
+  .info1 .pin{
+    left: 10px;
+    width: 200px;
+    position: relative;
+    
+    animation: pointup 3s infinite ease-in-out;
+
+  }
+
+  .info1 .location {
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    position: relative;
+    left: 90vh;
+    top: -10vh;
+    width: 200px;
+    height: 350px;
+  }
+
+  .info1 .textbox img{
+  position:absolute;
+  width: 60px;
+  top: -5px;
+  left: -80px;
+    }
+    .info1 .textbox .side{
+      margin-bottom: -10px;
+      color: white;
+      font-size: 0.7em;
+      font-weight: 900;
+    }
+   
+
+  .info .frame1{
+    position: absolute;
+    width: 100px;
+  }
+  .info2{
+    position: relative;
+    width: 900px;
+    left: 30vh;
+    top: 10vh;
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        font-size: 2em;
+  }
+
+  .info2 .main2 {
+    
+    font-size: 1.8em;
+    text-shadow:  0 0 20px #9900ff;
+  }
+  .info2 .pin{
+    width: 200px;
+  
+  }
+
+  .info2 .location {
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    position: relative;
+    text-align: center;
+    left: 90vh;
+    top: -10vh;
+    width: 500px;
+    height: 350px;
+  }
+
+  .info2 .textbox img{
+  position:absolute;
+  width: 60px;
+  top: -5px;
+  left: -80px;
+    }
+    .info2 .textbox .side{
+      margin-bottom: -10px;
+      color: white;
+      font-size: 0.7em;
+      font-weight: 900;
+    }
+
+    .info2 .textbox {
+
+      text-align: center;
+    }
+   
+
+  .info .frame1{
+    position: absolute;
+    width: 100px;
+  }
+
+
+  body{
+    
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 10% 50%, #4e007b, #490071, #2a0041);
+    transition: background-color 0.5s ease; /* Smooth transition effect */
+
+
+  }
+  .bg-one {
+    background-color: radial-gradient(circle at 10% 50%, #4e007b, #490071, #2a0041); /* Initial background color */
+  }
+  .bg-two {
+    background-color: radial-gradient(circle at 10% 50%, #240039, #25003a, #13001e); /* Background color to transition to */
+  }
+
+
+
+
+  a {
+    color: transparent;
+    text-decoration: none;
+  }
+
+  .mainnav{
+    font-size: 1.3em;
+    position: relative;
+    top: -8px;
+    right: 20px;
+    width: 1666px;
+    background: radial-gradient(circle at 10% 50%, #4e007b, #490071, #2a0041);
+    border-bottom: #2a0041 1px solid;
+    padding: 15px;
+  }
+
+  .mainnav p {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+text-shadow: 0 0 5px #ff00aa; 
+  }
+
+  .mainnav label {
+    float: right;
+    position: relative;
+    top: -70px;
+    padding: 20px;
+
+
+
+
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+text-shadow: 0 0 5px #ff00aa; 
+  }
+
+  label:hover{
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000% { content: ""; }
+  1.1395% { content: "f"; }
+  2.2791% { content: "fr"; }
+  3.4186% { content: "fro"; }
+  4.5581% { content: "front"; }
+  5.6977% { content: "fronte"; }
+  6.8372% { content: "fronten"; }
+  7.9767%{ content: "frontend"; }
+  8.5000% { content: "frontend d"; }
+  9.1395% { content: "frontend de"; }
+  10.2791% { content: "frontend dev"; }
+  11.4186% { content: "frontend deve"; }
+  12.5581% { content: "frontend devel"; }
+  13.6977% { content: "frontend develo"; }
+  14.8372% { content: "frontend develop"; }
+  15.9767%{ content: "frontend develope"; }
+  16.1163%{ content: "frontend developer"; }
+  0% { width: 0; }
+  100% { width: 100%; }
+
+}
+
+@keyframes blink {
+  100% { opacity: 1; }
+
+}
+
+.typewriter::before {
+  content: "frontend developer";
+  overflow: hidden;
+  animation: typing 13s steps(1, end) forwards;
+}
+
+.typewriter::after {
+  content: "";
+ 
+}
+
+
+
+
+@media (prefers-reduced-motion) {
+
+  
+  @keyframes sequencePopup {
+     100% { content: "frontend developer"; }
+
+  }
+
+  .typewriter::before {
+    content: "frontend developer";
+  }
+}
+
+</style>
+<script>
+  function changeBackground() {
+    var scrollPos = window.scrollY; // Get the current scroll position
+    var triggerPos = 500; // Change background after scrolling down 500 pixels
+
+    if (scrollPos > triggerPos) {
+      document.body.classList.add('bg-two'); // Add class to change background
+    } else {
+      document.body.classList.remove('bg-two'); // Remove class if scrolling back up
+    }
+  }
+</script>
+
+
+
+</html>
