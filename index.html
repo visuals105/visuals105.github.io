@@ -10,7 +10,6 @@
 
 <body class="bg-one" onscroll="changeBackground()">
   <div class="side-top"></div>
-<h1 class="disclaimer">See full page on PC</h1>
 
   <div class="info1">
 
@@ -65,9 +64,12 @@
 
 
 <style>
+
+  
 .disclaimer{
   display: none;
 }
+
 
 
 
@@ -323,19 +325,66 @@ text-shadow: 0 0 5px #ff00aa;
  
 }
 
-
 @media (max-width: 768px) {
-    .info1 {
-      display: none;
-    }
-    .info2{
-      display: none;
-    }
-    .disclaimer {
-      display: block;
-    }
-    /* Add more phone-specific styles here */
+
+  .info1 {
+    margin-bottom: 150px;
+    left: 10vh;
   }
+  .info1 .textbox img {
+    position: absolute;
+    width: 50px;
+  }
+  .info1 .textbox {
+    font-size: 0.9em;
+  }
+  .info1 .location{
+    left: 10vh;
+    top: 5vh;
+  }
+  
+  
+
+  .info2 {
+    left: 10vh;
+  }
+  .info2 .textbox img {
+    position: absolute;
+    width: 50px;
+  }
+  .info2 .textbox {
+    text-align: left;
+    font-size: 0.9em;
+  }
+  .info2 .location{
+    font-size: 0.7em;
+    left: -7vh;
+    top: 5vh;
+  }
+
+
+
+  .mainnav {
+    height: 50px;
+    width: 550px;
+  }
+
+  .mainnav label {
+    top: -7vh;
+    padding: 10px;
+    }
+
+    .rocket {
+      left: 3vh;
+      width: 50px;
+    }
+
+    .mainnav p {
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+
+}
 
 @media (prefers-reduced-motion) {
 
