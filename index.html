@@ -7,6 +7,8 @@
   <div class="mainnav"><p> <img src="./rocket.png" class="rocket">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visualsbyVal</p> <label><a href="">Contact</a></label><label><a href="">About</a></label><label><a href="">Home</a></label></div>
 
 </head>
+<h1 class="disclaimer">See full page on PC</h1>
+
 <body class="bg-one" onscroll="changeBackground()">
   <div class="side-top"></div>
 
@@ -320,7 +322,13 @@ text-shadow: 0 0 5px #ff00aa;
 }
 
 
+@media (max-width: 768px) {
+    .bg-one {
+      display: none;
 
+    }
+    /* Add more phone-specific styles here */
+  }
 
 @media (prefers-reduced-motion) {
 
