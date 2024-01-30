@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <div class="mainnav"><p> <img src="./rocket.png" class="rocket">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JulienPoposchil</p> <label><a href="">Contact</a></label><label><a href="">About</a></label><label><a href="">Home</a></label></div>
+  <div class="mainnav"><p> <img src="./rocket.png" class="rocket">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visuals105</p> <label><a href="">Contact</a></label><label><a href="#about" onclick="smoothScroll(event)">About</a></label><label><a href="">Home</a></label></div>
   <meta name="theme-color" content="purple">
 </head>
 
-<body class="bg-one" onscroll="changeBackground()">
+<body class="bg-one">
   <div class="side-top"></div>
 
   <div class="info1">
@@ -20,8 +20,10 @@
         </p>
         
 
-      <p class="side">I'm Valentin, 16 years old and currently <br><p class="side"> still in school. I'm working on </p> <p class="side">my html skills but  also learning C# in school.</p>
+      <p class="side"></p>
     </div>
+    <button class="button1"><img src="./arrow.png" class="arrow"></button>
+
     <div class="location">
      
 
@@ -32,21 +34,22 @@
   </div>
 
   <div class="info2">
-
     <div class="textbox">
-      <img src="./frame1.png" class="frame1">
+      <img src="./frame2.png" class="frame1">
 
       <p class="main">About</p>
       <p class="side">I'm Valentin, 16 years old and currently <br><p class="side"> still in school. I'm currently working on </p> <p class="side">my html skills but  also learning C# in school.</p>
     </div>
-    <div class="location">
+    
+          <div class="location">
      
 
       <img src="./education.png " class="pin">
       <p class="main2">HTL Wolfsberg</p>
+     
     </div>
 
- 
+    
   </div>
   <p></p>
   <p></p>
@@ -58,7 +61,7 @@
   <div class="side back"></div>
 
 
- 
+  <section id="about"></section>
   </div>
 </body>
 
@@ -71,7 +74,10 @@
 }
 
 
-
+.textauto {
+  width: 640px;
+  font-size: 2em;
+}
 
 
 
@@ -81,8 +87,44 @@
     top: 20px;
     width:70px;
   }
+
+  .button1 {
+    background: linear-gradient(45deg, #4a0083, #87006a, #88005b);
+    border: none;
+    width: 220px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    box-shadow:  0 0 20px #9900ff;
+    position: absolute;
+    top:20vh;
+
+  }
+  @keyframes hoverShadow {
+  0% {
+    box-shadow:  0 0 20px #9900ff;
+  }
+  100% {
+    box-shadow: 0 0 40px #9900ff;
+  }
+}
+.button1:hover::before{
+  box-shadow:  0 0 20px #9900ff;
+}
+
+.button1:hover::after{
+  box-shadow:  0 0 40px #9900ff;
+}
+
+  .button1 .arrow {
+    position: absolute;
+    left: 7vh;
+    top: 1vh;
+    height: 70px;
+    width: 70px;
+  }
   .info1{
-    margin-bottom: 30vh;
+    margin-bottom: 70vh;
     position: relative;
     width: 900px;
     left: 30vh;
@@ -126,9 +168,9 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-    position: relative;
+    position: absolute;
     left: 90vh;
-    top: -10vh;
+    top: 10vh;
     width: 200px;
     height: 350px;
   }
@@ -149,9 +191,10 @@
   .info2{
     position: relative;
     width: 900px;
-    left: 30vh;
+    left: 50vh;
     top: 10vh;
     background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+    
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -160,15 +203,23 @@
   }
 
   .info2 .main2 {
-    
+    background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    position: relative;
     font-size: 1.8em;
-    text-shadow:  0 0 20px #9900ff;
+    top: -10vh;
+      text-shadow:  0 0 20px #9900ff;
   }
   .info2 .pin{
     width: 200px;
   
   }
-
+  .info2 .main {
+    text-shadow:  0 0 20px #9900ff;
+    font-size: 1.3em;
+  }
   .info2 .location {
     background: linear-gradient(45deg, #9000ff, #ff00c8, #ff00aa);
         -webkit-background-clip: text;
@@ -176,17 +227,22 @@
         color: transparent;
     position: relative;
     text-align: center;
-    left: 90vh;
+    left: -40vh;
     top: -10vh;
     width: 500px;
     height: 350px;
 }
 
+.inf2 .location img {
+
+  border-bottom: 200px;
+}
+
   .info2 .textbox img{
   position:absolute;
  width: 20px;
+  left: 100vh;
   top: 1vh;
-  left: -80px;
     }
     .info2 .textbox .side{
       margin-bottom: -10px;
@@ -196,15 +252,11 @@
     }
 
     .info2 .textbox {
-
-      text-align: center;
+      
+      text-align: right;
     }
    
 
-  .info .frame1{
-    position: absolute;
-    width: 100px;
-  }
 
 
   body{
@@ -235,7 +287,7 @@
     position: relative;
     top: -8px;
     right: 20px;
-    width: 1666px;
+    width: 100%;
     background: radial-gradient(circle at 10% 50%, #4e007b, #490071, #2a0041);
     border-bottom: #2a0041 1px solid;
     padding: 15px;
@@ -253,6 +305,7 @@ text-shadow: 0 0 5px #ff00aa;
   }
 
   .mainnav label {
+    text-decoration: underline;
     float: right;
     position: relative;
     top: -70px;
@@ -299,6 +352,8 @@ text-shadow: 0 0 5px #ff00aa;
   14.8372% { content: "frontend develop"; }
   15.9767%{ content: "frontend develope"; }
   16.1163%{ content: "frontend developer"; }
+  17.1163%{ content: "frontend developer."; }
+
   0% { width: 0; }
   100% { width: 100%; }
 
@@ -310,7 +365,7 @@ text-shadow: 0 0 5px #ff00aa;
 }
 
 .typewriter::before {
-  content: "frontend developer";
+  content: "frontend developer.";
   overflow: hidden;
   animation: typing 13s steps(1, end) forwards;
 }
@@ -435,12 +490,12 @@ text-shadow: 0 0 5px #ff00aa;
 
   
   @keyframes sequencePopup {
-     100% { content: "frontend developer"; }
+     100% { content: "frontend developer."; }
 
   }
 
   .typewriter::before {
-    content: "frontend developer";
+    content: "frontend developer.";
   }
 }
 
@@ -456,6 +511,19 @@ text-shadow: 0 0 5px #ff00aa;
       document.body.classList.remove('bg-two'); // Remove class if scrolling back up
     }
   }
+
+
+
+  function smoothScroll(event) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute("href").substring(1);
+  const targetElement = document.getElementById(targetId);
+  const offsetTop = targetElement.offsetTop;
+  window.scrollTo({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
 </script>
 
 
