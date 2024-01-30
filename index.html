@@ -15,7 +15,7 @@
 
     <div class="textbox">
       <img src="./frame1.png" class="frame1">
-        <p aria-label="frontend developer">
+        <p aria-label="frontend developer" class="textauto">
           Hello, I'm a&nbsp;<span class="typewriter"></span>
         </p>
         
@@ -326,30 +326,40 @@ text-shadow: 0 0 5px #ff00aa;
 }
 
 @media (max-width: 768px) {
-
+  .textauto {
+    margin-left: 0vh;
+  }
   .info1 {
     width: 600px;
     margin-bottom: 150px;
-    left: 10vh;
+    left: 5vh;
   }
   .info1 .textbox img {
-    
-    width: 50px;
+    margin-top: 1vh;
+    margin-left:5vh;
+    width: 15px;
     position: absolute;
   }
   .info1 .textbox {
+
     width: 500px;
     font-size: 0.4em;
   }
+
   .info1 .typewriter {
-    
     width: 300px;
   }
   .info1 .location{
-    
-    width: 500px;
+    font-size: 0.6em;
+    width: 300px;
     left: 10vh;
-    top: 5vh;
+    top: 11vh;
+  }
+  .info1 .location img{
+    
+    width: 100px;
+    left: 2vh;
+    top: -20vh;
   }
   
   
